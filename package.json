@@ -1,0 +1,64 @@
+{
+  "name": "@vue-termui/syntax-highlight",
+  "version": "0.0.2",
+  "description": "Syntax highlight component for vue-termui.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "packageManager": "pnpm@7.12.2",
+  "scripts": {
+    "build": "tsup",
+    "play:dev": "pnpm run --filter './playground' dev",
+    "play:build": "pnpm run --filter './playground' build",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vue-terminal/syntax-highlight.git"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/*.js",
+    "dist/*.mjs",
+    "dist/*.cjs",
+    "dist/*.d.ts"
+  ],
+  "keywords": [
+    "vue-termui",
+    "code",
+    "syntax",
+    "component",
+    "syntax-highlight",
+    "vue"
+  ],
+  "author": "webfansplz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vue-terminal/syntax-highlight/issues"
+  },
+  "homepage": "https://github.com/vue-terminal/syntax-highlight#readme",
+  "peerDependencies": {
+    "vue-termui": "^0.0.17",
+    "@vue/runtime-core": "^3.2.41"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@vue/runtime-core": "^3.2.41",
+    "prettier": "^2.8.0",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.3",
+    "vue": "^3.2.41",
+    "vue-termui": "0.0.17"
+  },
+  "dependencies": {
+    "cli-highlight": "^2.1.11"
+  }
+}
