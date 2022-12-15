@@ -15,11 +15,29 @@ setInterval(()=> {
 }, 1000)
 `
 )
+
+const code2 = `
+fn main() {
+  // Print text to the console
+  println!("Hello World!");
+}
+`
 </script>
 
 <template>
   <Box
-    :padding="2"
+    :padding="1"
+    :width="50"
+    justifyContent="center"
+    alignItems="center"
+    flexDirection="column"
+    borderColor="green"
+    borderStyle="round"
+  >
+    <SyntaxHighlight :code="code" lang="js" />
+  </Box>
+  <Box
+    :padding="1"
     :width="50"
     justifyContent="center"
     alignItems="center"
@@ -27,6 +45,6 @@ setInterval(()=> {
     borderColor="blue"
     borderStyle="round"
   >
-    <SyntaxHighlight :code="code" lang="js" />
+    <SyntaxHighlight :code="code2" lang="rust" theme="nord" />
   </Box>
 </template>

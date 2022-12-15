@@ -44,12 +44,13 @@
   },
   "homepage": "https://github.com/vue-terminal/syntax-highlight#readme",
   "peerDependencies": {
-    "vue-termui": "^0.0.17",
-    "@vue/runtime-core": "^3.2.41"
+    "@vue/runtime-core": "^3.2.41",
+    "vue-termui": "^0.0.17"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
     "@vue/runtime-core": "^3.2.41",
+    "chalk": "^5.2.0",
     "prettier": "^2.8.0",
     "tsup": "^6.5.0",
     "typescript": "^4.9.3",
@@ -57,6 +58,6 @@
     "vue-termui": "0.0.17"
   },
   "dependencies": {
-    "cli-highlight": "^2.1.11"
+    "shiki": "^0.11.1"
   }
 }
