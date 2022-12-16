@@ -1,6 +1,6 @@
 {
   "name": "@vue-termui/syntax-highlight",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Syntax highlight component for vue-termui.",
   "type": "module",
   "module": "./dist/index.mjs",
