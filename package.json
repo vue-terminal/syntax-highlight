@@ -1,6 +1,6 @@
 {
   "name": "@vue-termui/syntax-highlight",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Syntax highlight component for vue-termui.",
   "type": "module",
   "module": "./dist/index.mjs",
@@ -45,7 +45,7 @@
   "homepage": "https://github.com/vue-terminal/syntax-highlight#readme",
   "peerDependencies": {
     "@vue/runtime-core": "^3.2.41",
-    "vue-termui": "^0.0.17"
+    "vue-termui": "^0.0.19"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
