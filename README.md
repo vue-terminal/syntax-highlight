@@ -44,12 +44,12 @@ Source code to highlight.
 
 ### lang
 
-- Type: `string`
-
-Language of the source code. If you don't set it yourself, this component will try to auto-detect it. [All languages of highlight.js](https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md#supported-languages) are supported.
+- Type: [Lang](https://github.com/shikijs/shiki/blob/main/docs/languages.md)
 
 ### theme
 
-- Type: [Theme](https://github.com/felixfbecker/cli-highlight/blob/main/src/theme.ts#L280)<br>
+- Type: [Theme](https://github.com/shikijs/shiki/blob/main/docs/themes.md)<br>
 
-You can write your custom theme and pass it as a prop. [More info regarding custom theme](https://github.com/felixfbecker/cli-highlight/blob/main/README.md#themes).
+## Credits
+
+Syntax Highlight is based on [Shiki](https://github.com/shikijs/shiki)

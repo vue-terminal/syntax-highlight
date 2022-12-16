@@ -1,6 +1,6 @@
 import { TuiTextTransform } from 'vue-termui'
 import { defineComponent, h, PropType } from '@vue/runtime-core'
-import { getHighlighter, Highlighter, Lang } from 'shiki'
+import { getHighlighter, Highlighter, Lang, Theme } from 'shiki'
 import c from 'chalk'
 
 const shiki = ref<Highlighter>()
@@ -9,7 +9,7 @@ let shikiLoading: Promise<void> | undefined
 export const SyntaxHighlight = defineComponent({
   props: {
     theme: {
-      type: String,
+      type: String as PropType<Theme>,
       default: 'vitesse-dark',
     },
     code: {
@@ -34,7 +34,7 @@ export const SyntaxHighlight = defineComponent({
     const isLoading = ref(true)
 
     watch(
-      () => [shiki.value, props.theme, props.theme],
+      () => [shiki.value, props.theme],
       () => {
         if (shiki.value) load(shiki.value)
       },
