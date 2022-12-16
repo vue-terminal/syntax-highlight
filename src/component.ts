@@ -1,5 +1,5 @@
 import { TuiTextTransform } from 'vue-termui'
-import { defineComponent, h, PropType, ref } from '@vue/runtime-core'
+import { defineComponent, h, PropType, ref, watch } from '@vue/runtime-core'
 import { getHighlighter, Highlighter, Lang, Theme } from 'shiki'
 import c from 'chalk'
 
