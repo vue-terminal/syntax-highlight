@@ -34,7 +34,7 @@ export const SyntaxHighlight = defineComponent({
     const isLoading = ref(true)
 
     watch(
-      () => [shiki.value, props.theme],
+      () => [shiki.value, props.theme, props.lang],
       () => {
         if (shiki.value) load(shiki.value)
       },
