@@ -21,7 +21,7 @@ npm install @vue-termui/syntax-highlight
 
 ```html
 <script lang="ts" setup>
-  improt { TuiBox } from 'vue-termui'
+  import { TuiBox } from 'vue-termui'
   import SyntaxHighlight from '@vue-termui/syntax-highlight'
 
   const code = `const hello = 'world'`
